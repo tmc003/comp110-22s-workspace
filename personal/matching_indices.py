@@ -1,6 +1,6 @@
-"""EX01 - Chardle - A cute step toward Wordle."""
+"""I'm trying to figure out this assignment 01."""
 
-__author__ = "730316240"
+___author___ = "730316240"
 
 word = input("Enter a 5-character word: ")
 word_count = int(len(word))
@@ -8,10 +8,8 @@ word_count = int(len(word))
 if word_count == 5:
     character = input("Enter a single character: ")
     character_count = int(len(character))
-    if character_count != 1:
-        exit(print("Error: Character must be a single character."))
-    else:
-        print("Searching for", character, "in", word)
+    print("Searching for", character, "in", word)
+    if character_count == 1:
         overlap = word.count(character)
         if overlap == 0:
             print("No instances of", character, "found in", word)
@@ -43,5 +41,7 @@ if word_count == 5:
             if word[4] == character:
                 print(character, "found at index 4") 
             print(overlap, "instances of", character, "found in", word)
+    else:
+        exit(print("Error: Character must be a single character."))
 else:
     exit(print("Error: Word must contain 5 letters."))
