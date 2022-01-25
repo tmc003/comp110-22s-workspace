@@ -2,15 +2,15 @@
 
 __author__ = "730316240"
 
-Left = int(input("Pick a number."))
-Right = int(input("Pick a number."))
+left_hand_side = int(input("Pick a number."))
+right_hand_side = int(input("Pick a number."))
 
-Less = Left < Right
-Greater = Left >= Right
-Equal = Left == Right
-Unequal = Left != Right
+less = left_hand_side < right_hand_side
+greater = left_hand_side >= right_hand_side
+equal = left_hand_side == right_hand_side
+unequal = left_hand_side != right_hand_side
 
-print(Left, " < "  Right  " is " Less)
-print(Left " >= " Rigtht " is " Greater)
-print(Left " == " Right " is " Equal)
-print(Left " != "  Right " is " Unequal)
+less_print = print(left_hand_side, " < ",  right_hand_side,  " is ", less)
+greater_print = print(left_hand_side, " >= ", right_hand_side, " is ", greater)
+equal_print = print(left_hand_side, " == ", right_hand_side, " is ", equal)
+unequal_print = print(left_hand_side, " != ",  right_hand_side, " is ", unequal)
