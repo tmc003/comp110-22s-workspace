@@ -13,36 +13,37 @@ if count == 5:
     if single == 1:
         appearances = int(word.count(character))
         if appearances == 0:
-            print("No instances of", character, "found in", word)
+            print("No instance of", character, "found in", word)
             exit()
-        elif appearances == 1:
-            if word[0] == character:
-                print(character, "found at index 1")
+        else:
+             appearances > 1
+        if word[0] == character:
+                print(character, "found at index 0")
                 print("1 instance of", character, "found in", word)
-            if word[1] == character:
+        if word[1] == character:
+                print(character, "found at index 1")
+                print("1 instance of", character, "found")
+        if word[2] == character:
                 print(character, "found at index 2")
-                print("1 instances of", character, "found")
-            if word[2] == character:
+                print("1 instance of", character, "found in", word)
+        if word[3] == character:
                 print(character, "found at index 3")
                 print("1 instance of", character, "found in", word)
-            if word[3] == character:
+        if word[4] == character:
                 print(character, "found at index 4")
-                print("1 instance of", character, "found in", word)
-            if word[4] == character:
-                print(character, "found at index 5")
                 print("1 instance of", character, "found in", word)
         else:
             if appearances > 1:
                 if word[0] == character:
-                    print(character, "found at index 1")
+                    print(character, "found at index 0")
                 if word[1] == character:
-                    print(character, "found at index 2")
+                    print(character, "found at index 1")
                 if word[2] == character:
-                    print(character, "found at index 3")
+                    print(character, "found at index 2")
                 if word[3] == character:
-                    print(character, "found at index 4")
+                    print(character, "found at index 3")
                 if word[4] == character:
-                    print(character, "found at index 5")
+                    print(character, "found at index 4")
                 if appearances > 1:
                     print(appearances, "instances of", character, "found in", word)
     else:
