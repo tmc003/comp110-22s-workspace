@@ -1,9 +1,14 @@
 """Exercise 01."""
 __author__ = "730316240"
 
-name : str = input("What is your name? ")
-print("You entered:")
-print(name)
-print(name + " still has not watched Spider-Man: Homecoming.")
-print("Don't give up on seeing it, " + name + "! ")
-print("You know what " + name + ", let's go see it tomorrow.")
+word = str(input("What is your guess? "))
+character = str(input("What is your character"))
+result = bool
+i = 0
+
+while i < (len(word)):
+    if word[i] == character: 
+        result = True
+    else: 
+        i =+ 1
+print(result)

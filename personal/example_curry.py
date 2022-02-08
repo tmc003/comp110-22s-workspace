@@ -44,7 +44,9 @@ else:
     response = bool(input("There is a honda dealership down the road. Do you want to go check out some cars today?"))
     color: str = input(str("Ok what color car do you want?"))
     car_desired_year = input(int("& what about the year?"))
-    print("Ok, Let's buy a ", color, " civic made in ", car_desired_year : str(car_desired_year), ".")
+    print("Ok, Let's buy a ", color, " civic made in ", car_desired_year, car_desired_year, ".")
+
+    
    
 
 
