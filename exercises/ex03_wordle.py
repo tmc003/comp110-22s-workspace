@@ -6,7 +6,7 @@ def contains_char(word: str, character: str) -> bool:
     """Searches indeces of a second input in first input."""
     assert len(character) == 1
     i = 0
-    while i < (len(word)): #search for the indexed character in the word
+    while i < (len(word)):  # search for the indexed character in the word
         if word[i] == character: 
             return True
         else: 
@@ -23,14 +23,14 @@ def emojified(guess: str, word: str) -> str:
     YELLOWBOX: str = "\U0001F7E8"
     i = 0
     output = ""
-    while i < len(word): #start of looking for the indexed character in order to output the codified boxes
+    while i < len(word):  # start of looking for the indexed character in order to output the codified boxes
         if contains_char(word, guess[i]):
             if word[i] == guess[i]:
                 output = (output + GREENBOX)
             else:
                 output = (output + YELLOWBOX)
         else:
-            output = (output + WHITEBOX) #an output that results when the character is not in the word
+            output = (output + WHITEBOX)  # an output that results when the character is not in the word
         i = i + 1
     return output
 
@@ -39,7 +39,7 @@ def input_guess(length: int) -> str:
     """Returns a string of the length of the input."""
     guess = input(f"Enter a {length} character word: ")
     while len(guess) != length:
-        guess = input(f"That wasn't { length } chars! Try again: ") #loop to get a gas that is the right length
+        guess = input(f"That wasn't { length } chars! Try again: ")  # loop to get a gas that is the right length
     return guess
 
 

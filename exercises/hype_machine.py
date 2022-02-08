@@ -10,5 +10,5 @@ while i < (len(word)):
     if word[i] == character: 
         result = True
     else: 
-        i =+ 1
+        i += 1
 print(result)
