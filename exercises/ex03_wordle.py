@@ -46,7 +46,7 @@ def input_guess(length: int) -> str:
 def main() -> None:
     """The entrypoint of the program and main game loop."""
     t = 1
-    won = bool
+    won = False
     word = "codes"
     n = len(word)
     while t < 7 and won is not True:
