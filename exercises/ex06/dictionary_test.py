@@ -2,12 +2,12 @@
 
 __author__ = "730316240"
 
-from utils import concat
-from utils import only_evens
-from utils import sub
+from dictionary import count
+from dictionary import favorite_color
+from dictionary import invert
 
 
-def test_only_evens() -> None:  # This test will make sure that all the components of the list are even
+def test_count() -> None:  # This test will make sure that all the components of the list are even
     new_list: list[int] = only_evens([1, 2, 3, 4, 5, 6])
     total = sum(new_list)
     assert total % 2 == 0

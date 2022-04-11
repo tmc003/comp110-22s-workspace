@@ -1,4 +1,4 @@
-"""Dictionary related utility functions."""
+"""Exercise 08."""
 
 __author__ = "730316240"
 
@@ -72,7 +72,7 @@ def concat(a: dict[str, list[str]], b: dict[str, list[str]]) -> dict[str, list[s
 
 
 def count(list: list[str]) -> dict[str, int]:
-    """Gives ech appended column a unique numercial value."""
+    """Gives each appended column a unique numercial value."""
     result: dict[str, int] = {}
     for item in list:
         if item in result:
@@ -80,3 +80,20 @@ def count(list: list[str]) -> dict[str, int]:
         else:
             result[item] = 1
     return result 
+
+
+def filter(original: dict[str, list[str]], word: str) -> dict[str, list[str]]:
+    result: dict[str, list[str]] = {}
+    for item in original:
+        if item == word:
+            result[item] = original[item]
+    return result
+
+
+def helper(original: list[str], filter: list[bool]) -> list[str]:
+    result: list[str] = []
+    i: int = 0
+    while i < len(filter):
+        if filter[i]:
+            result.append(original[i])
+    return result

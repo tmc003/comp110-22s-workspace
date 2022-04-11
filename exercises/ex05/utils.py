@@ -3,44 +3,38 @@
 __author__ = "730316240"
 
 
-def only_evens(o_list: list[int]) -> list:
+def only_evens(o_list: list[int]) -> list[int]:  # This is the defined function that will create the only evens function
     """This is the function that defines only_evens."""
-    num = len(o_list)
     i = 0
-    while i < num:
-        if o_list[i] // 2 == 0:
-            o_list.append(o_list[i])
-        else:
-            o_list.pop(o_list[i])     
+    for list in o_list:
+        if o_list[i] % 2 == 1:
+            o_list.pop(i)
         i += 1
     return o_list
 
 
-def sub(s_list: list[int], x: int, y: int) -> list:
+def sub(s_list: list[int], x: int, y: int) -> list[int]:  # This is the defined function that will create the sub function
     """This function defines the sub function for the code."""
-    i = 0
-    for s in s_list:
-        if s_list[x]:
-            s_list.append(x)
-        else:
-            if s_list[y]:
-                s_list.append(y)
-            else:
-                s_list.pop(i)
+    n_list: list[int] = list()
+    i = x
+    while i < y:
+        new = s_list[i]
+        n_list.append(new)
         i += 1
-    return s_list
+    return n_list
 
 
-def concat(list1: list[int], list2: list[int]) -> list: 
+def concat(list1: list[int], list2: list[int]) -> list[int]:  # This is the defined function that will created the concat function
     sum: list[int] = list()
     list1_total = len(list1)
-    total = list1_total + len(list2)
+    list2_total = len(list2)
     i = 0
     while i < list1_total:
         sum.append(list1[i])
         i += 1
     
-    while i < total:
+    i = 0
+    while i < list2_total:
         sum.append(list2[i])
         i += 1
     return sum
